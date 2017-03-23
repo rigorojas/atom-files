@@ -1,0 +1,66 @@
+"*":
+  atomatigit:
+    display_commit_comparisons: false
+    show_on_startup: true
+  core:
+    audioBeep: false
+    closeEmptyWindows: false
+    disabledPackages: [
+      "wrap-guide"
+      "tool-bar"
+      "flex-tool-bar"
+      "project-plus"
+      "lucid-tabs"
+      "color-picker"
+      "less-autocompile"
+      "git-time-machine"
+      "project-sidebar"
+      "git-projects"
+      "git-control"
+    ]
+    telemetryConsent: "limited"
+  "custom-title":
+    template: "<% if (gitHead) { %> [<%= gitHead %>] /<% }%><%= relativeFilePath %>"
+  editor:
+    fontSize: 13
+    invisibles: {}
+    lineHeight: 1.2
+    preferredLineLength: 1
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    zoomFontWhenCtrlScrolling: true
+  "exception-reporting":
+    userId: "93258b41-c469-416d-20df-2bd24947f290"
+  "file-bookmark":
+    auto: true
+    icons: false
+  "flex-tool-bar": {}
+  "fuzzy-finder":
+    searchAllPanes: true
+  linter: {}
+  "livestyle-atom":
+    analyzer:
+      notifyCampaign: false
+  "project-plus":
+    projectHome: "/Users/rigoberto.rojas/www/site/NFL-site-web"
+    showPath: true
+  "run-in-terminal": {}
+  "scope-inspector":
+    highlightGlobalScope: true
+    userId: "5a1d13a3bc62854e848b9cef099c95bec26334ae"
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "toggle-gutter":
+    showNumbers: true
+  "tool-bar":
+    iconSize: "16px"
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false
