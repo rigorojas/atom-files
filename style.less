@@ -1,0 +1,81 @@
+@font-size: 9px;
+html, body, .tree-view {
+  font-size: @font-size;
+}
+
+/* - * - */
+.tab-bar {}
+.tab-bar .tab {}
+.tab-bar .tab .title {color: white !important; font-size: 12px;}
+.tab-bar .tab.active .title {color: white !important; font-size: 14px !important;}
+.tab-bar .tab[data-type="TextEditor"]::after {background-color: rgba(100,100, 100, 0.3);}
+
+/* - * - */
+.tree-view {background-color: #002;}
+.list-tree.has-collapsable-children li.list-item {margin-left: 0px;}
+.header.list-item::before {display:none !important;}
+
+.list-group .icon::before,
+.list-tree .icon::before { margin-right: 0px;}
+
+/* - * - */
+atom-text-editor {background-color: #003; line-height: 1.6;}
+atom-text-editor::shadow .cursor {}
+atom-text-editor::shadow .scroll-view {margin-left: 15px;}
+atom-text-editor::shadow .gutter {background-color: #222233; border-right: 1px solid #333;}
+atom-text-editor::shadow .line {margin-bottom: 0px;}
+/*
+.tab-bar {height: 34px;padding: 0;
+  .tab {-webkit-transform: none; top: 2px;line-height: 25px;
+    &.active {height: 25px;
+      &:before {height: 25px;}
+    }
+    &:before {-webkit-transform: none;width: 18px;}
+    .close-icon {-webkit-transform: none;line-height: 25px;}
+    .title {-webkit-transform: none;}
+  }
+}
+*/
+
+atom-pane-container atom-pane .item-views .pane-item {background: #000033;}
+atom-pane div div ol li ul li{
+    &:before{background: #000033;}
+    .selected{
+        &:before{background: #000033;}
+    }
+    span {
+        span {color: #ffffff;}
+    }
+}
+
+atom-text-editor::shadow .icon-right {background: yellow;color: #ffffff;border-radius: 50%; opacity: 1;}
+
+.preview-pane .results-view {font-size: 12px;}
+.path-details.list-item {background: #001590;
+    .path-name.bright{color: #ffffff;}
+}
+.match.highlight-info {font-size: 14px;font-weight: normal; color: #ffffff;}
+
+
+
+
+
+
+
+atom-text-editor::shadow .line {
+  &.git-diff-details-new-highlighted {
+    background-color: rgba(162, 232, 120, 0.4) !important;
+  }
+
+  &.git-diff-details-old-highlighted {
+    background-color: rgba(232, 120, 120, 0.4) !important;
+  }
+
+  &.git-diff-details-new-flat {
+    background-color: rgba(162, 232, 120, 0.7) !important;
+  }
+
+  &.git-diff-details-old-flat {
+    background-color: rgba(232, 120, 120, 0.7) !important;
+  }
+}
